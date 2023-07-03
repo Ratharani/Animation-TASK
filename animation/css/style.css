@@ -1,0 +1,146 @@
+* {
+  margin:0px;
+  padding:0px;
+  }
+h1 {
+	text-align: center;
+	color: DarkRed;
+	text-decoration: underline;
+	margin:20px;
+	padding:20px;
+	
+}
+ul {
+	padding:20px;
+}
+.name {
+	 width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 10s;
+  margin:0px auto;
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+.duration {
+	width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: dura;
+  animation-duration: 5s;
+   margin:0px auto;
+}
+@keyframes dura {
+   from{right:0px;background-color:yellow;}
+  to{right:300px;background-color:red;}
+}
+.delay {
+	width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: delayed;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  margin:0px auto;
+}
+@keyframes delayed {
+  from{left:0px;background-color:pink;}
+  to{left:300px;background-color:green;}
+}
+.count {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name:iteration;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  margin:0px auto;
+}
+
+@keyframes iteration {
+	from{top:0px;}
+	to{top:200px; background-color:yellow;}
+}
+.direction {
+	 width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: direct;
+  animation-duration: 4s;
+  animation-direction: reverse;
+  margin:0px auto;
+}
+@keyframes direct {
+	from {top:0px; background-color:lightblue;}
+	to {top:300px; background-color:blue;}
+}
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  font-weight:bold;
+  animation: time 5s infinite;
+}
+#div1 {
+	
+	animation-timing-function: linear;
+	}
+#div2 {
+	
+	animation-timing-function: ease;
+	}
+#div3 {
+	
+	animation-timing-function: ease-in;
+	}
+#div4 {
+	
+	animation-timing-function: ease-out;
+	}
+#div5 {
+	
+	animation-timing-function: ease-in-out;
+	}
+
+@keyframes time {
+	from {left:0px;background-color:yellow;}
+	to {left:300px;background-color:darkpink;}
+}
+.fill {
+	width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: mode;
+  animation-duration: 3s;  
+  animation-fill-mode: both;
+  margin:0px auto;
+}
+@keyframes mode {
+	from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+.anim {
+	width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+@keyframes myfirst {
+	from {left: 0px;}
+  to {left: 200px; background-color:yellow;}
+}
+	
+		
+	
